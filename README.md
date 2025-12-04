@@ -46,4 +46,3 @@ Be respectful and inclusive in all interactions.
 ## .NET Foundation
 
 This project is built on top of the [.NET Foundation](http://www.dotnetfoundation.org) ecosystem.
-# craftcms
