@@ -1,15 +1,24 @@
-# Cachy
+# CraftCMS
 
-Cachy is an open-source, modular, multi-tenant application framework and CMS for ASP.NET Core.
+CraftCMS is an open-source, modular, multi-tenant Content Management System and application framework built on ASP.NET Core.
 
-Cachy consists of two distinct projects:
+CraftCMS consists of two distinct projects:
 
-- __Cachy Framework__: An application framework for building modular, multi-tenant applications on ASP.NET Core.
-- __Cachy CMS__: A Web Content Management System (CMS) built on top of the Cachy Framework.
+- __CraftCMS Framework__: An application framework for building modular, multi-tenant applications on ASP.NET Core.
+- __CraftCMS Core__: A Web Content Management System (CMS) built on top of the CraftCMS Framework.
+
+## Features
+
+- **Content Management** — Create and manage pages, blogs, and media with ease
+- **Multi-Tenant** — Run multiple websites from a single application
+- **Modular** — Enable or disable features as independent modules
+- **Admin Dashboard** — Manage everything from a clean UI panel
+- **API Ready** — Expose content via REST and GraphQL
+- **Built on ASP.NET Core** — Fast, modern, cross-platform
 
 ## Project Status: v2.2.1
 
-The software is production-ready and capable of serving large, mission-critical applications. We are not aware of any fundamental bugs or missing features we deem crucial. Cachy continues to evolve, with each version bringing new improvements, and keeping up with the cutting-edge of .NET.
+CraftCMS is production-ready and capable of serving large, mission-critical applications. It continues to evolve with each version, keeping up with the cutting-edge of .NET.
 
 ## Getting Started
 
