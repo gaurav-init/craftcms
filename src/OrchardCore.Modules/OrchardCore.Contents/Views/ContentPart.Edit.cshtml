@@ -1,0 +1,43 @@
+@using OrchardCore.ContentManagement.Metadata.Models
+@using OrchardCore.ContentManagement.Metadata.Settings
+@using OrchardCore.ContentManagement
+@using OrchardCore
+@using OrchardCore.Localization.Data
+
+@inject IDataLocalizer D
+
+@{
+    ContentPart contentPart = Model.ContentPart;
+    ContentTypePartDefinition typePartDefinition = Model.ContentTypePartDefinition;
+    var description = typePartDefinition.Description();
+}
+
+<div class="@Orchard.GetPartWrapperClasses(typePartDefinition)">
+
+    @if (typePartDefinition.IsNamedPart())
+    {
+        <div class="@Orchard.GetLabelClasses()">
+            @D[typePartDefinition.DisplayName(), "Content Types"]
+
+            @if (!string.IsNullOrEmpty(description))
+            {
+                <small class="form-text text-muted">@description</small>
+            }
+        </div>
+
+        <div class="@Orchard.GetEndClasses()">
+            @foreach (var shape in Model)
+            {
+                @await DisplayAsync(shape)
+            }
+        </div>
+    }
+    else
+    {   
+        foreach (var shape in Model)
+        {
+            @await DisplayAsync(shape)
+        }
+    }
+
+</div>
